@@ -40,6 +40,7 @@ class MyStack:
                 self.queue_1.push(self.queue_2.pop())
             return temp
 
+    # 这里不能简单地取完之后peek，一定要全部取出来
     def top(self) -> int:
         length = self.queue_1.size()
         if length == 1:
